@@ -1,0 +1,221 @@
+@charset "utf-8";
+@import url('../fonts/ProximaNova/fonts.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+
+body {
+	position:relative;
+	margin:0;
+	padding:0;
+	font-family:'Proxima Nova Rg', sans-serif;
+	min-width:300px;
+	height: 100%;
+	font-size:14px;	
+	background:#262626;
+}
+
+.sprite {background: url('../images/sprite.png') no-repeat;}
+.sprite-btc {background-position: 0 0;}
+.sprite-signal {background-position: -52px 0;}
+.sprite-graph-up {background-position: -88px 0;}
+.sprite-arrow-up {background-position: -119px 0;}
+.sprite-arrow-down {background-position: -105px 0;}
+
+.color-green {color: #00bf70 !important;}
+.color-red {color: #f72055 !important;}
+
+.widgets-body {
+	width: 300px;
+	margin: 0 auto;
+	padding: 35px 0 0;
+}
+
+.widgets-header {
+	margin: 0 0 35px;
+	font-size: 48px;
+	color: #fff;
+	font-family: 'Proxima Nova Lt', sans-serif;
+}
+
+.crypto-widget {
+	margin: 0 0 55px;
+	padding: 15px;
+	background: #fff;
+	-webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+		    border-radius: 10px;
+}
+
+.crypto-widget__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.crypto-widget__btc-logo {
+	display: flex;
+}
+
+.crypto-widget__signal {
+	width: 18px;
+	height: 21px;
+}
+
+.btc-logo {
+	width: 36px;
+	height: 36px;
+	margin: 0 10px 0 0;
+}
+
+.btc-name {
+	line-height: 1.2;
+}
+
+.btc-name div {
+	font-size: 18px;
+	color: #4d7cfe;
+}
+
+.btc-name span {
+	font-size: 14px;
+	color: #bfbfbf;
+	text-transform: uppercase;
+}
+
+.crypto-widget__body {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 7px 0 15px;
+}
+
+.crypto-blocks__crypto-one-bl {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 10px;
+}
+
+.crypto-blocks__open-price {
+	background: #f2f3f7;
+	-webkit-border-radius: 7px 0 0 7px;
+       -moz-border-radius: 7px 0 0 7px;
+		    border-radius: 7px 0 0 7px;
+}
+
+.crypto-blocks__now-price {
+	position: relative;
+	background: #fff;
+	-webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+		    border-radius: 7px;
+	box-shadow: 0 0 5px 2px rgba(0, 191,112, .2);	
+	z-index: 1;    
+}
+
+.crypto-blocks__target-price {	
+	-webkit-border-radius: 0 7px 7px 0;
+       -moz-border-radius: 0 7px 7px 0;
+		    border-radius: 0 7px 7px 0;
+}
+
+.crypto-blocks__target-price_up {
+	background: #e7f7f4;
+}
+
+.crypto-blocks__target-price_down {
+	background: #f8e6ea;
+}
+
+.crypto-one-bl__title {
+	font-size: 11px;
+	color: #9da9b9;
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin: 0 0 15px;
+}
+
+.crypto-one-bl__price {
+	font-size: 15px;
+	color: #000;
+	white-space: nowrap;
+	margin: 0 0 6px;
+}
+
+.crypto-one-bl__time {
+	font-size: 12px;
+	color: #9da9b9;
+}
+
+.crypto-blocks__now-price .crypto-one-bl__time {
+	text-align: center;
+	font-size: 10px;
+	text-transform: uppercase;;
+}
+
+.crypto-one-bl__graph {
+	width: 14px;
+	height: 10px;
+	margin: 0 auto 5px;
+}
+
+.crypto-one-bl__target-val {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	font-size: 13px;
+}
+
+.target-val-up {
+	width: 10px;
+	height: 11px;
+	margin: 0 6px 0 0;
+}
+
+.crypto-btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.crypto-btns button {
+	width: 125px;
+	height: 33px;
+	-webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+		    border-radius: 4px;
+}
+
+.crypto-btns__btn-more {
+	border: solid 1px #4d7cfe;
+	color: #4d7cfe;
+	background: #fff;
+}
+
+.crypto-btns__btn-buy {
+	border: 0;
+	color: #fff;
+	background: #00bf70;
+}
+
+.crypto-btns__btn-sell {
+	border: 0;
+	color: #fff;
+	background: #f72055;
+}
+
+
+
+
